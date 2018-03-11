@@ -1,0 +1,39 @@
+.input-login{
+    background-color: rgba(196, 196, 196, .5);
+    height: 60px;
+    min-width: 70px;
+    width: 29vw;
+    display: flex;
+}
+
+.input-login-img{
+    height: 85%;
+    width: 92%;
+}
+
+.input-login-cont-img{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    height: 83%;
+    border: .5px solid rgba(242, 242, 242, 0.8);
+}
+
+.input-login-form{
+    border: none;
+    background-color: transparent;
+    width: 78%;
+    color:white;
+    font-size: 17px;
+}
+
+.input-login-form::placeholder{
+    color:white;
+    font-size: 17px;
+    opacity: 1; /* Firefox */
+}

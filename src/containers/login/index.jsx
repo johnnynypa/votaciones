@@ -3,6 +3,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter} from 'react-router-dom';
 
+import FormLogin from '../../components/login/form';
+
 import backLogin from '../../components/media/backLogin-min.jpg';
 import Registraduria from '../../components/media/Registraduria.logo.svg-min.png';
 import Colombia from '../../components/media/Colombia.svg-min.png';
@@ -32,7 +34,9 @@ class Login extends React.Component<Props, {}>{
                     <img src={Registraduria} alt=""/>
                     <img src={Colombia} alt=""/>
                 </div>
-                <div className="son-login son-login-right "></div>
+                <div className="son-login son-login-right ">
+                    <FormLogin />
+                </div>
             </div>
         );
     }
