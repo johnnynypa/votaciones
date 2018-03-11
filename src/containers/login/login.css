@@ -1,0 +1,30 @@
+#container-login{
+    position: relative;
+    display: flex;
+}
+
+#fondoLogin{
+    position: absolute;
+    width: 100vw;
+    height: 105vh;
+    margin-top: -25px;
+    opacity: 0.55;
+}
+
+.son-login{
+    height: 80vh;
+    width: 50vw;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.son-login-left{
+    justify-content: space-around;
+}
+
+.son-login-right{
+    
+}
