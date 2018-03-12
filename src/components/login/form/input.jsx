@@ -4,7 +4,10 @@ import './input.css';
 type Props = {
     type: string,
     placeholder: string,
-    img: any
+    img: any,
+    onChange: Function,
+    value: string,
+    name: string
 }
 
 class InputLogin extends React.Component<Props>{
@@ -16,6 +19,9 @@ class InputLogin extends React.Component<Props>{
                     <hr/>
                 </div>
                 <input
+                    name={this.props.name}
+                    value={this.props.value}
+                    onChange={this.props.onChange}
                     className="input-login-form"
                     type={this.props.type}
                     placeholder={this.props.placeholder}

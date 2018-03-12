@@ -8,6 +8,6 @@ export default createStore(
     compose(
         applyMiddleware(thunk)
         // eslint-disable-next-line
-        // (window.devToolsExtension) ? window.devToolsExtension() : f = f
+        (window.devToolsExtension) ? window.devToolsExtension() : f = f
     )
 );

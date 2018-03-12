@@ -1,9 +1,35 @@
 #form-login{
-    height: 30%;
+    height: 47%;
     width: 80%;
     display: flex;
 
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#form-login-button{
+    min-width: 70px;
+    width: 29vw;
+    height: 60px;
+    background-color: rgba(196, 196, 196, .25);
+    color: white;
+    font-size: 26px;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: 1000ms;
+    cursor: pointer;
+}
+
+#form-login-button:hover{
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+#form-login-button:focus{
+    outline: 0;
+}
+
+#form-login > span{
+    color:white;
 }

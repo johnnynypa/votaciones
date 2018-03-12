@@ -1,0 +1,32 @@
+#footer-login{
+    height: 20vh;
+    width: 100vw;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#elecciones{
+    width: 352px;
+    height: 100%;
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+}
+
+.front-background{
+    margin-top: 5px;
+    z-index: 2;
+    width: 250px;
+}
+
+#footer-login > h1 {
+    margin-right: 80px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 65px;
+}

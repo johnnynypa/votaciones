@@ -1,0 +1,29 @@
+{
+    "peoples":[
+        {
+            "id": 1,
+            "name": "johnny",
+            "dni": "1234"
+        },
+        {
+            "id": 2,
+            "name": "fay",
+            "dni": "1234"
+        },
+        {
+            "id": 3,
+            "name": "carmen",
+            "dni": "1234"
+        },
+        {
+            "id": 4,
+            "name": "mario",
+            "dni": "1234"
+        },
+        {
+            "id": 5,
+            "name": "piedad",
+            "dni": "1234"
+        }
+    ]
+}

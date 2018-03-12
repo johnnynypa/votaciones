@@ -37,3 +37,7 @@ hr{
     font-size: 17px;
     opacity: 1; /* Firefox */
 }
+
+.input-login-form:focus{
+    outline: 0;
+}

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter} from 'react-router-dom';
 
 import FormLogin from '../../components/login/form';
+import Footer from '../../components/login/footer';
 
 import backLogin from '../../components/media/backLogin-min.jpg';
 import Registraduria from '../../components/media/Registraduria.logo.svg-min.png';
@@ -14,9 +15,6 @@ type Props = {
     isLogin: boolean,
     history: any
 }
-
-// $FlowFixMe
-
 
 
 class Login extends React.Component<Props, {}>{
@@ -30,13 +28,16 @@ class Login extends React.Component<Props, {}>{
         return(
             <div id="container-login" >
                 <img src={backLogin} alt="" id="fondoLogin" />
-                <div className="son-login son-login-left ">
-                    <img src={Registraduria} alt=""/>
-                    <img src={Colombia} alt=""/>
+                <div id="container-son-login" >
+                    <div className="son-login son-login-left ">
+                        <img src={Registraduria} alt=""/>
+                        <img src={Colombia} alt=""/>
+                    </div>
+                    <div className="son-login son-login-right ">
+                        <FormLogin />
+                    </div>
                 </div>
-                <div className="son-login son-login-right ">
-                    <FormLogin />
-                </div>
+                <Footer />
             </div>
         );
     }

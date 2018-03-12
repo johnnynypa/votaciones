@@ -1,6 +1,5 @@
 #container-login{
     position: relative;
-    display: flex;
 }
 
 #fondoLogin{
@@ -9,6 +8,11 @@
     height: 105vh;
     margin-top: -25px;
     opacity: 0.55;
+    z-index: -1;
+}
+
+#container-son-login{
+    display: flex;
 }
 
 .son-login{
