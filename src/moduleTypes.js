@@ -7,6 +7,23 @@ export type EstadoLogin = {
     }
 }
 
+export type EstadoVotacion = {
+    candidatos: Array<Candidato>,
+    votos: Array<Voto>
+}
+
+export type Voto = {
+    idUser: number,
+    idCandidato: number
+}
+
+export type Candidato = {
+    partido: string,
+    name: string,
+    viceName: string,
+    id: number
+}
+
 export type Action = {
     type: string,
     payload: Object
