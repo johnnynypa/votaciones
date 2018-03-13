@@ -5,6 +5,7 @@ import type { EstadoLogin, Action} from '../../moduleTypes'
 const initialState : EstadoLogin = {
     isLogin: false,
     user: {
+        id: 0,
         nombre: "",
         dni: ""
     }

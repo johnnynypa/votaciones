@@ -2,6 +2,7 @@
 export type EstadoLogin = {
     isLogin: boolean,
     user:{
+        id: number,
         nombre : string,
         dni : string
     }

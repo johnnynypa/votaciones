@@ -47,18 +47,15 @@ const initialState : EstadoVotacion = {
 export default (state: EstadoVotacion = initialState, action:Action) => {
     switch(action.type){
         case (VOTE):{
-            if(action.payload.idCandidato && action.payload.idUser){
-                for (let voto of state.votos){
-                    if(voto.idUser === action.payload.idUser){
-                        return state;
-                    }
-                }
+            if(action.payload.idCandidato && action.payload.idUsuario){
                 state.votos.push({
-                    idUser: action.payload.idUser,
+                    idUser: action.payload.idUsuario,
                     idCandidato: action.payload.idCandidato
                 })
-            }
-            return state;
+                return state;
+            }else
+                
+                return state;
         }
         default:{
             return state;
