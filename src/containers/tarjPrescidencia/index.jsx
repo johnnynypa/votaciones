@@ -26,12 +26,14 @@ import ImgCandidate5 from '../../components/media/candidate5.jpg';
 import ImgCandidate5Vice from '../../components/media/candidate5.5.jpg';
 
 type Props = {
-    candidatos : Array<Candidato>
+    candidatos : Array<Candidato>,
+    votos: []
 }
 
 
 class Prescidencia extends React.Component<Props>{
     render(){
+        console.log(this.props.votos);
         return(
             <div id="page-tarjeton" >
                 <div id="bandera-fondo">
@@ -104,7 +106,8 @@ class Prescidencia extends React.Component<Props>{
 
 function mapStateToProps(state){
     return {
-        candidatos: state.votacion.candidatos
+        candidatos: state.votacion.candidatos,
+        votos: state.votacion.votos
     }
 }
 
