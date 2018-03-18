@@ -29,6 +29,12 @@
     justify-content: space-around;
 }
 
+.son-login-left > img{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f4f4f483;
+}
+
 .son-login-right{
     justify-content: center;
 }

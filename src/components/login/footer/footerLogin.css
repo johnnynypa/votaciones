@@ -20,7 +20,9 @@
 .front-background{
     margin-top: 5px;
     z-index: 2;
-    width: 250px;
+    width: 105px;
+    margin-top: 15px;
+    margin-left: 45px;
 }
 
 #footer-login > h1 {

@@ -2,27 +2,37 @@
     "peoples":[
         {
             "id": 1,
-            "name": "johnny",
+            "role":1,
+            "name": "Johnny",
+            "lastName":"Pacheco",
             "dni": "1234"
         },
         {
             "id": 2,
-            "name": "fay",
+            "role":2,
+            "name": "Fay",
+            "lastName":"Cervantez",
             "dni": "1234"
         },
         {
             "id": 3,
-            "name": "carmen",
+            "role":1,
+            "name": "Carmen",
+            "lastName":"Martinez",
             "dni": "1234"
         },
         {
             "id": 4,
-            "name": "mario",
+            "role":2,
+            "name": "Mario",
+            "lastName":"Ospino",
             "dni": "1234"
         },
         {
             "id": 5,
-            "name": "piedad",
+            "role":2,
+            "name": "Piedad",
+            "lastName":"Heredia",
             "dni": "1234"
         }
     ]

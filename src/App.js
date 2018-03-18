@@ -4,18 +4,24 @@ import { Provider } from 'react-redux';
 
 
 import store from './redux/store';
+import VideoFondo from './components/media/unimag.mp4';
 
 import Login from './containers/login';
 import Prescidencia from './containers/tarjPrescidencia';
 
 const App = (
 	<Provider store={store}>
-		<Router>
-			<div>
-				<Route exact path="/" component={Login} />
-				<Route path="/prescidente" component={Prescidencia} />
-			</div>
-		</Router>
+		<div id="container-general" >
+			<video autoPlay loop id="video-fondo" >
+				<source src={VideoFondo} type="video/mp4" />
+			</video>
+			<Router>
+				<div>
+					<Route exact path="/" component={Login} />
+					<Route path="/prescidente" component={Prescidencia} />
+				</div>
+			</Router>
+		</div>
 	</Provider>
 );
 

@@ -6,9 +6,7 @@ import { withRouter} from 'react-router-dom';
 import FormLogin from '../../components/login/form';
 import Footer from '../../components/login/footer';
 
-import backLogin from '../../components/media/backLogin-min.jpg';
-import Registraduria from '../../components/media/Registraduria.logo.svg-min.png';
-import Colombia from '../../components/media/Colombia.svg-min.png';
+import UniMag from '../../components/media/logoUnimag.png';
 import './login.css'
 
 type Props = {
@@ -27,11 +25,9 @@ class Login extends React.Component<Props, {}>{
     render(){
         return(
             <div id="container-login" >
-                <img src={backLogin} alt="" id="fondoLogin" />
                 <div id="container-son-login" >
                     <div className="son-login son-login-left ">
-                        <img src={Registraduria} alt=""/>
-                        <img src={Colombia} alt=""/>
+                        <img src={UniMag} alt=""/>
                     </div>
                     <div className="son-login son-login-right ">
                         <FormLogin />

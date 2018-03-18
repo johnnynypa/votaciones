@@ -19,9 +19,7 @@ export type Voto = {
 }
 
 export type Candidato = {
-    partido: string,
     name: string,
-    viceName: string,
     id: number
 }
 

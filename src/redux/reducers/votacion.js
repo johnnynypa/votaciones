@@ -5,40 +5,16 @@ import type {EstadoVotacion, Action} from '../../moduleTypes';
 const initialState : EstadoVotacion = {
     candidatos : [
         {
-            partido : "Voto en Blanco",
-            name: "",
-            viceName: "",
+            name: "Voto en blanco",
             id: 0
         },
         {
-            partido : "Alianza Verde",
-            name: "Patricia Polo",
-            viceName: "Martin Pizarro",
+            name: "Pablo Vera",
             id: 1
         },
         {
-            partido : "Polo Democratico",
-            name: "Hernan Perez",
-            viceName: "Erick valderrama",
+            name: "Pedro Eslava",
             id: 2
-        },
-        {
-            partido : "Decentes",
-            name: "Jairo Mendoza",
-            viceName: "Maria Dominguez",
-            id: 3
-        },
-        {
-            partido : "Cambio radical",
-            name: "Luis Mejia",
-            viceName: "Ader Orozco",
-            id: 4
-        },
-        {
-            partido : "Cambio radical",
-            name: "Laura Quiñonez",
-            viceName: "Carmen Osorio",
-            id: 5
         }
     ],
     votos: []

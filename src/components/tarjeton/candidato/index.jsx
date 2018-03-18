@@ -1,7 +1,6 @@
 //@flow
 import React from 'react';
 import { connect } from 'react-redux';
-import Modal from 'react-modal';
 import {withRouter } from 'react-router-dom';
 import {votar} from '../../../redux/actions/votacion';
 import {logout} from '../../../redux/actions/login';
@@ -25,7 +24,7 @@ type Props = {
 }
 
 type State = {
-    modalIsOpen: boolean,
+    showError: boolean,
     show: boolean
 }
 
@@ -35,7 +34,7 @@ class Candidato extends React.Component<Props, State>{
         super(props);
 
         this.state = {
-            modalIsOpen: false,
+            showError: false,
             show: false
         }
 
@@ -44,6 +43,12 @@ class Candidato extends React.Component<Props, State>{
     }
 
     onClick(){
+        for (let voto of this.props.votos){
+            if(voto.idUser === this.props.idUsuario){
+                this.setState({ showError: true });
+                return;
+            }
+        }
         this.setState({ show: true });
     }
 
@@ -77,15 +82,6 @@ class Candidato extends React.Component<Props, State>{
                     text="¿Desea votar por el candidato seleccionado?"
                     showCancelButton
                     onConfirm={() => {
-                        for (let voto of this.props.votos){
-                            if(voto.idUser === this.props.idUsuario){
-                                this.setState({ show: false });
-                                alert("Error, este usuario ya ha votado");
-                                this.props.logout();
-                                this.props.history.push('/');
-                                return;
-                            }
-                        }
                         this.props.votar({
                             idCandidato: this.props.idCandidato,
                             idUsuario: this.props.idUsuario,
@@ -99,6 +95,19 @@ class Candidato extends React.Component<Props, State>{
                     }}
                     onEscapeKey={() => this.setState({ show: false })}
                     onOutsideClick={() => this.setState({ show: false })}
+                    />
+                    <SweetAlert
+                    show={this.state.showError}
+                    onConfirm = {() => {
+                        this.setState({showError: false});
+                        this.props.logout();
+                        this.props.history.push('/');
+                    }}
+                    title="Error"
+                    type="error"
+                    text="Usted ya ha votado antes"
+                    onEscapeKey={() => this.setState({ showError: false })}
+                    onOutsideClick={() => this.setState({ showError: false })}
                     />
             </div>
         )

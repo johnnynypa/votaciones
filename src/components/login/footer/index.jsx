@@ -2,7 +2,7 @@ import React from 'react';
 import './footerLogin.css';
 
 import Rectangle from '../../media/Rectangle.svg';
-import Elecciones from '../../media/eleccions-2018-min.png';
+import Calidad from '../../media/calidad.png';
 
 
 class FooterLogin extends React.Component{
@@ -11,7 +11,7 @@ class FooterLogin extends React.Component{
             <div id="footer-login" >
                 <div id="elecciones" >
                     <img src={Rectangle} alt="" className="background" />
-                    <img src={Elecciones} alt="" className="front-background" />
+                    <img src={Calidad} alt="" className="front-background" />
                 </div>
                 <h1>
                     Vota, ¡Tú Decides!

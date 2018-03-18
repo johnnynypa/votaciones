@@ -10,3 +10,14 @@ body{
   width: 100vw;
   overflow: hidden;
 }
+
+#container-general{
+  position: relative;
+}
+
+
+#video-fondo{
+  position: absolute;
+  opacity: .3;
+  width: 150vw;
+}
