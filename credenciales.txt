@@ -1,0 +1,2 @@
+jurado: fay, 234.
+votante: Johnny: 123
