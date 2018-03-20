@@ -8,6 +8,7 @@ import VideoFondo from './components/media/unimag.mp4';
 
 import Login from './containers/login';
 import Prescidencia from './containers/tarjPrescidencia';
+import Jurado from './containers/jurado';
 
 const App = (
 	<Provider store={store}>
@@ -19,6 +20,7 @@ const App = (
 				<div>
 					<Route exact path="/" component={Login} />
 					<Route path="/prescidente" component={Prescidencia} />
+					<Route path="/jurado" component={Jurado} />
 				</div>
 			</Router>
 		</div>

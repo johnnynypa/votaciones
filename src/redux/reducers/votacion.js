@@ -17,7 +17,33 @@ const initialState : EstadoVotacion = {
             id: 2
         }
     ],
-    votos: []
+    votos: [
+        {
+            idUser: 1,
+            idCandidato: 1,
+            fecha: "11:30"
+        },
+        {
+            idUser: 3,
+            idCandidato: 3,
+            fecha: "13:45"
+        },
+        {
+            idUser: 4,
+            idCandidato: 2,
+            fecha: "13:49"
+        },
+        {
+            idUser: 5,
+            idCandidato: 1,
+            fecha: "15:00"
+        },
+        {
+            idUser: 6,
+            idCandidato: 1,
+            fecha: "15:12"
+        }
+    ]
 }
 
 export default (state: EstadoVotacion = initialState, action:Action) => {

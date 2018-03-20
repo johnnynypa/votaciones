@@ -51,15 +51,18 @@ class FormLogin extends React.Component<Props, State>{
             error: ""
         })
         for (let people of peoples){
-            if(people.name === this.state.name && people.dni === this.state.dni){
+            if(people.nombre === this.state.name && people.dni === this.state.dni){
                 this.props.setCurrentUser(people);
-                this.props.history.push("/prescidente")
+                if(people.rol){
+                    this.props.history.push("/jurado")
+                }else{
+                    this.props.history.push("/prescidente");
+                }
+                
                 return;
             }
         }
-        this.setState({
-            error: "Credenciales incorreptas"
-        })
+        this.setState({error: "Credenciales incorreptas"});
     }
 
     render(){

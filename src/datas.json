@@ -1,39 +1,41 @@
 {
     "peoples":[
-        {
-            "id": 1,
-            "role":1,
-            "name": "Johnny",
-            "lastName":"Pacheco",
-            "dni": "1234"
-        },
-        {
-            "id": 2,
-            "role":2,
-            "name": "Fay",
-            "lastName":"Cervantez",
-            "dni": "1234"
-        },
-        {
-            "id": 3,
-            "role":1,
-            "name": "Carmen",
-            "lastName":"Martinez",
-            "dni": "1234"
-        },
-        {
-            "id": 4,
-            "role":2,
-            "name": "Mario",
-            "lastName":"Ospino",
-            "dni": "1234"
-        },
-        {
-            "id": 5,
-            "role":2,
-            "name": "Piedad",
-            "lastName":"Heredia",
-            "dni": "1234"
-        }
+      {
+        "id": 1,
+        "nombre": "Johnny",
+        "apellido": "Pacheco",
+        "dni": "123"
+      },
+      {
+        "id": 2,
+        "nombre": "Fay",
+        "apellido": "Cervantes",
+        "dni": "234",
+        "rol": 1
+      },
+      {
+        "id": 3,
+        "nombre": "Carmen",
+        "apellido": "Martinez",
+        "dni": "345"
+      },
+      {
+        "id": 4,
+        "nombre": "Yolanda",
+        "apellido": "Villarreal",
+        "dni": "456"
+      },
+      {
+        "id": 5,
+        "nombre": "Joel",
+        "apellido": "Alvarez",
+        "dni": "567"
+      },
+      {
+        "id": 6,
+        "nombre": "Yenis",
+        "apellido": "Villarreal",
+        "dni": "678"
+      }
     ]
-}
+  }

@@ -15,7 +15,8 @@ export type EstadoVotacion = {
 
 export type Voto = {
     idUser: number,
-    idCandidato: number
+    idCandidato: number,
+    fecha: any
 }
 
 export type Candidato = {
